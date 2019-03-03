@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}Hello from Flask{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+  <h1>
+    Hello,
+    {% if name %}
+      {{ name }}
+    {% else %}
+      World
+    {% endif %}
+    !
+  </h1>
+{% endblock %}
