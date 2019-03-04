@@ -1,7 +1,11 @@
 from flask import Flask, render_template
+from flask_assets import Environment, YAMLLoader
 from datetime import datetime
 
+# Reference the app properly,
 app = Flask(__name__)
+# and initiate the bundle loader.
+Environment(app).from_yaml(__name__ + '/static/bundles.yaml')
 
 # Used to pass variables to every template
 @app.context_processor

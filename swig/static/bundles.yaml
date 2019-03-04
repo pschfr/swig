@@ -1,0 +1,6 @@
+sass_all:
+  filters: sass
+  output: compiled.css
+  contents:
+    - sass/body.sass
+    - sass/fonts.sass

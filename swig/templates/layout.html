@@ -2,6 +2,9 @@
 <html>
 	<head>
 		{% block head %}
+			{% assets "sass_all" %}
+				<link rel="stylesheet" href="{{ ASSET_URL }}">
+			{% endassets %}
 			<title>{% block title %}{% endblock %} - My Webpage</title>
 		{% endblock %}
 	</head>
